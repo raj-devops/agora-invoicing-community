@@ -1,1 +1,12 @@
-<h1> Testing the file document for sample1 </h1/>
+def lambda_handler(event, context):
+    print("In lambda handler")
+
+    resp = {
+        "statusCode": 200,
+        "headers": {
+            "Access-Control-Allow-Origin": "*",
+        },
+        "body": "Raman Sharma"
+    }
+
+    return resp
